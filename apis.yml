@@ -1,7 +1,22 @@
 aid: stable
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stable.png
 name: Stable
-description: Stable is a company surfaced as a portfolio company of anthemis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Stable is an insurtech company that provides price risk management and
+  price insurance for agricultural and food commodities, helping farmers, food producers,
+  buyers, and businesses hedge against the volatility of commodity prices. Backed by
+  Anthemis and surfaced in the API Evangelist network as a portfolio-lead stub, Stable
+  operates a price-stabilization platform rather than a public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/stable/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +26,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Insurance
+- InsurTech
+- FinTech
+- Commodities
+- Agriculture
+- Risk Management
+- Price Insurance
 apis: []
+common:
+- type: DomainSecurity
+  url: security/stable-domain-security.yml
+- type: Website
+  url: https://stableprice.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
